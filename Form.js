@@ -14,15 +14,15 @@ export default class Logo extends Component<{}> {
 			<View style={styles.container}>
           <TextInput style={styles.inputBox} 
               underlineColorAndroid='rgba(0,0,0,0)' 
-              placeholder="Email"
+              placeholder="User Name"
               placeholderTextColor = "#ffffff"
               selectionColor="#fff"
-              keyboardType="email-address"
+              keyboardType="user-name"
               onSubmitEditing={()=> this.password.focus()}
               />
           <TextInput style={styles.inputBox} 
               underlineColorAndroid='rgba(0,0,0,0)' 
-              placeholder="Password"
+              placeholder="MobileNumber"
               secureTextEntry={true}
               placeholderTextColor = "#ffffff"
               ref={(input) => this.password = input}

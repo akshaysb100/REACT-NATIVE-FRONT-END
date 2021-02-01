@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Router, Stack, Scene} from 'react-native-router-flux';
+import 'react-native-gesture-handler';
 
 import Login from './Login';
 import Signup from './Signup';
