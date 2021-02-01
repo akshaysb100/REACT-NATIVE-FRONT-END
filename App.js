@@ -1,21 +1,35 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
 
-import React, {Component} from 'react';  
-import {Platform, StyleSheet, Text, View} from 'react-native';  
-  
-type Props = {};  
-export default class App extends Component<Props> {  
-  render() {  
-    return (  
-      <View>  
-        <Text style={styles.welcome}>Hello World</Text>  
-      </View>  
-    );  
-  }  
-}  
-const styles = StyleSheet.create({  
-  welcome: {  
-    fontSize: 20,  
-    textAlign: 'center',  
-    margin: 10,  
-  }  
-});  
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  View,
+  StatusBar 
+} from 'react-native';
+
+
+import Routes from './Routes';
+
+export default class App extends Component<{}> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <StatusBar
+           backgroundColor="#1c313a"
+           barStyle="light-content"
+         />
+        <Routes/>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container : {
+    flex: 1,
+  }
+});

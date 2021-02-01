@@ -7,8 +7,8 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import Logo from '../components/Logo';
-import Form from '../components/Form';
+import Logo from './Logo';
+import Form from './Form';
 
 import {Actions} from 'react-native-router-flux';
 
