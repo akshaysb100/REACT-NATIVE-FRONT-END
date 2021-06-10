@@ -27,6 +27,7 @@ export default class Logo extends Component<{}> {
               placeholderTextColor = "#ffffff"
               ref={(input) => this.password = input}
               />  
+            <TouchableOpacity onPress={this.goBack}><Text style={styles.signupButton}> Sign in</Text></TouchableOpacity>
            <TouchableOpacity style={styles.button}>
              <Text style={styles.buttonText}>{this.props.type}</Text>
            </TouchableOpacity>     
